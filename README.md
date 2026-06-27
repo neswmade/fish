@@ -11,3 +11,4 @@ git clone https://github.com/neswmade/fish.git ~/.config/fish
  - zoxide
  - eza
  - git
+ - fzf
