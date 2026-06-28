@@ -3,10 +3,6 @@ if status is-interactive
 
     # starship
     command -v starship &> /dev/null && starship init fish | source
-    function starship_transient_prompt_func
-        starship module character
-    end
-    enable_transience
 
     # zoxide
     command -v zoxide &> /dev/null && zoxide init fish --cmd cd | source
