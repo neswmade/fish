@@ -3,6 +3,10 @@ if status is-interactive
 
     # starship
     command -v starship &> /dev/null && starship init fish | source
+    function starship_transient_prompt_func
+        starship module character
+    end
+    enable_transience
 
     # zoxide
     command -v zoxide &> /dev/null && zoxide init fish --cmd cd | source
@@ -19,4 +23,18 @@ if status is-interactive
     abbr ga 'git add .'
     abbr gs 'git status'
     abbr gpl 'git pull'
+
+    # pacman
+    abbr up 'sudo pacman -Syu'
+    abbr pi 'sudo pacman -S'
+    abbr pr 'sudo pacman -Rns'
+    abbr ps 'pacman -Ss'
+    abbr pl 'pacman -Qs'
+
+    # aur
+    abbr yup 'paru -Syu'
+    abbr yi 'paru -S'
+    abbr yr 'paru -Rns'
+    abbr ys 'paru -Ss'
+    abbr pl 'paru -Qs'
 end
