@@ -13,3 +13,4 @@ chsh -s /usr/bin/fish
  - eza
  - git
  - fzf
+ - bat
