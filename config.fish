@@ -19,20 +19,28 @@ if status is-interactive
     abbr ga 'git add .'
     abbr gs 'git status'
     abbr gpl 'git pull'
+    abbr gco 'git checkout'
+    abbr gcb 'git checkout -b'
+    abbr gbd 'git branch -D'
+    abbr gpr 'git fetch origin --prune'
 
     # pacman
-    abbr up 'sudo pacman -Syu'
-    abbr pi 'sudo pacman -S'
-    abbr pr 'sudo pacman -Rns'
-    abbr ps 'pacman -Ss'
-    abbr pl 'pacman -Qs'
+    abbr pacup 'sudo pacman -Syu'
+    abbr paci 'sudo pacman -S'
+    abbr pacr 'sudo pacman -Rns'
+    abbr pacs 'pacman -Ss'
+    abbr pacl 'pacman -Qs'
 
     # aur
-    abbr yup 'paru -Syu'
-    abbr yi 'paru -S'
-    abbr yr 'paru -Rns'
-    abbr ys 'paru -Ss'
-    abbr pl 'paru -Qs'
+    abbr parup 'paru -Syu'
+    abbr pari 'paru -S'
+    abbr parr 'paru -Rns'
+    abbr pars 'paru -Ss'
+    abbr parl 'paru -Qs'
+
+    # common
+    abbr mkdir 'mkdir -p'
+    abbr rm 'rm -rf'
 
     # fzf
     set -gx FZF_DEFAULT_OPTS "
@@ -81,3 +89,4 @@ if status is-interactive
             --color 'header-border:#08c0ef,header-label:#08c0ef'
     end
 end
+
